@@ -168,7 +168,7 @@ root         560  0.0  0.0      0     0 ?        I<   04:41   0:00 [kworker/R-ex
 root         624  0.0  0.0      0     0 ?        S    04:41   0:00 [irq/60-vmw_vmci]
 root         625  0.0  0.0      0     0 ?        S    04:41   0:00 [irq/61-vmw_vmci]
 root         626  0.0  0.0      0     0 ?        S    04:41   0:00 [irq/62-vmw_vmci]
-root         661  0.0  1.2  50764 19920 ?        S<s  04:41   0:02 /usr/lib/systemd/systemd-journald
+root         661  0.0  1.2  50764 19932 ?        S<s  04:41   0:02 /usr/lib/systemd/systemd-journald
 root         693  0.0  0.0      0     0 ?        I<   04:41   0:00 [kworker/R-kmpathd]
 root         695  0.0  0.0      0     0 ?        I<   04:41   0:00 [kworker/R-kmpath_handlerd]
 root         700  0.0  0.5 345028  9776 ?        SLsl 04:41   0:01 /usr/sbin/multipathd -d -s
@@ -177,47 +177,48 @@ root         718  0.0  0.9  41696 16036 ?        Ss   04:41   0:01 /usr/lib/syst
 root         729  0.0  0.0      0     0 ?        S    04:41   0:00 [psimon]
 root         807  0.0  0.0      0     0 ?        S    04:41   0:00 [jbd2/sda2-8]
 root         808  0.0  0.0      0     0 ?        I<   04:41   0:00 [kworker/R-ext4-rsv-conversion]
-systemd+     924  0.0  0.7  21436 12392 ?        Ss   04:41   0:01 /usr/lib/systemd/systemd-networkd
+systemd+     924  0.0  0.7  21436 12428 ?        Ss   04:41   0:01 /usr/lib/systemd/systemd-networkd
 root         962  0.0  0.0      0     0 ?        I<   04:41   0:00 [kworker/R-cfg80211]
 root        1038  0.0  0.0      0     0 ?        S    04:41   0:00 [irq/16-vmwgfx]
 root        1039  0.0  0.6  20560 11392 ?        Ss   04:41   0:00 /usr/bin/VGAuthService
-root        1040  0.4  0.6 114052 10928 ?        Ssl  04:41   0:21 /usr/bin/vmtoolsd
+root        1040  0.4  0.6 114052 10928 ?        Ssl  04:41   0:23 /usr/bin/vmtoolsd
 root        1041  0.0  0.0      0     0 ?        I<   04:41   0:00 [kworker/R-ttm]
 root        1064  0.0  0.1   2888  2016 ?        Ss   04:41   0:00 /bin/sh /usr/lib/systemd/scripts/chronyd-starter.sh -n -F 1
 message+    1065  0.0  0.3   9128  5944 ?        Ss   04:41   0:01 @dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
-root        1074  0.0  1.8  46728 30012 ?        Ss   04:41   0:01 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+root        1074  0.0  1.8  46728 30020 ?        Ss   04:41   0:02 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
 polkitd     1075  0.0  0.5 306444  8428 ?        Ssl  04:41   0:00 /usr/lib/polkit-1/polkitd --no-debug --log-level=notice
 root        1078  0.1  2.7 1960380 44412 ?       Ssl  04:41   0:07 /usr/lib/snapd/snapd
 root        1083  0.0  0.5  18572  9692 ?        Ss   04:41   0:00 /usr/lib/systemd/systemd-logind
 root        1084  0.0  0.9 543440 15112 ?        Ssl  04:41   0:01 /usr/libexec/udisks2/udisksd
 root        1108  0.0  0.2   7060  3356 ?        Ss   04:41   0:00 /usr/sbin/cron -f -P
 root        1154  0.0  2.0 126096 32920 ?        Ssl  04:41   0:00 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
-_chrony     1155  0.0  0.6  23864 11352 ?        S    04:41   0:00 /usr/sbin/chronyd -n -F 1
+_chrony     1155  0.0  0.6  23864 11352 ?        S    04:41   0:01 /usr/sbin/chronyd -n -F 1
 root        1164  0.0  0.3   8756  5656 ?        Ss   04:41   0:00 login -- maleehanadeem13
 root        1191  0.0  0.8 391608 14092 ?        Ssl  04:41   0:00 /usr/sbin/ModemManager
 _chrony     1195  0.0  0.1  12096  2452 ?        S    04:41   0:00 /usr/sbin/chronyd -n -F 1
-syslog      1210  0.0  0.3 220548  6460 ?        Ssl  04:41   0:00 /usr/sbin/rsyslogd -n -iNONE
+syslog      1210  0.0  0.3 220548  6460 ?        Ssl  04:41   0:01 /usr/sbin/rsyslogd -n -iNONE
 maleeha+    1847  0.0  0.8  22316 13212 ?        Ss   04:44   0:00 /usr/lib/systemd/systemd --user
 maleeha+    1853  0.0  0.2  23012  4100 ?        S    04:44   0:00 (sd-pam)
 maleeha+    1878  0.0  0.3   8856  5932 tty1     Ss+  04:44   0:00 -bash
 root        2914  0.1  3.0 502376 50404 ?        Ssl  04:46   0:05 /usr/libexec/fwupd/fwupd
 root        3108  0.0  0.7 318592 11548 ?        Ssl  04:46   0:00 /usr/libexec/upowerd
-root        3174  0.0  0.0      0     0 ?        I    04:56   0:00 [kworker/u514:0-events_power_efficient]
+root        3174  0.0  0.0      0     0 ?        I    04:56   0:01 [kworker/u514:0-events_unbound]
 maleeha+    3499  0.0  0.3   8552  5052 ?        Ss   05:03   0:00 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
 root        3821  0.0  0.0      0     0 ?        S    05:03   0:00 [psimon]
 root        3984  0.0  0.4  10744  7896 ?        Ss   05:07   0:00 sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups
 root        3987  0.0  0.7  18524 12632 ?        Ss   05:07   0:00 sshd-session: maleehanadeem13 [priv]
-maleeha+    4045  0.2  0.4  18684  7784 ?        S    05:08   0:09 sshd-session: maleehanadeem13@pts/0
-maleeha+    4046  0.0  0.3   8976  6084 pts/0    Ss   05:08   0:01 -bash
-root        4073  0.0  0.0      0     0 ?        I<   05:08   0:00 [kworker/0:1H]
+maleeha+    4045  0.2  0.4  18844  8032 ?        S    05:08   0:10 sshd-session: maleehanadeem13@pts/0
+maleeha+    4046  0.0  0.3   8976  6084 pts/0    Ss   05:08   0:02 -bash
+root        4073  0.0  0.0      0     0 ?        I<   05:08   0:00 [kworker/0:1H-kblockd]
 root        4111  0.0  0.0      0     0 ?        I    05:13   0:00 [kworker/u513:1-events_power_efficient]
-root        4173  0.0  0.0      0     0 ?        I    05:27   0:00 [kworker/u514:2-events_unbound]
+root        4173  0.0  0.0      0     0 ?        I    05:27   0:00 [kworker/u514:2-events_power_efficient]
 root        4178  0.1  0.0      0     0 ?        I    05:30   0:03 [kworker/0:2-events]
-root        4187  0.0  0.0      0     0 ?        I    05:35   0:00 [kworker/1:2-cgroup_free]
 root        4366  0.0  0.0      0     0 ?        I<   05:40   0:00 [kworker/0:2H-kblockd]
-root        4702  0.1  0.0      0     0 ?        I    05:50   0:01 [kworker/1:1-mm_percpu_wq]
-root        4740  0.0  0.0      0     0 ?        I    05:52   0:00 [kworker/0:1-events]
-root        5093  0.0  0.0      0     0 ?        I    06:00   0:00 [kworker/1:0]
+root        4702  0.1  0.0      0     0 ?        I    05:50   0:01 [kworker/1:1-events]
+root        5093  0.0  0.0      0     0 ?        I    06:00   0:00 [kworker/1:0-events]
 root        5105  0.0  0.0      0     0 ?        I    06:01   0:00 [kworker/0:0-events]
 root        5109  0.0  0.0      0     0 ?        I    06:01   0:00 [kworker/u513:0]
-maleeha+    5197  200  0.2   9764  4720 pts/0    R+   06:05   0:00 ps aux
+root        5246  1.2  0.0      0     0 ?        I    06:06   0:01 [kworker/1:2-events]
+root        5267  2.0  0.0      0     0 ?        I    06:07   0:00 [kworker/0:1-events]
+root        5271  0.0  0.0      0     0 ?        I    06:07   0:00 [kworker/1:3-events]
+maleeha+    5306  388  0.2   9764  4760 pts/0    R+   06:08   0:00 ps aux

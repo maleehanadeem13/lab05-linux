@@ -1,0 +1,16 @@
+2026-10-16T06:12:26.087786+00:00 ubuntu-lab01 sudo: maleehanadeem13 : TTY=/dev/pts/0 ; PWD=/home/maleehanadeem13/lab05-linux ; USER=root ; COMMAND=/usr/sbin/adduser lab5user
+2026-10-16T06:12:26.878136+00:00 ubuntu-lab01 groupadd[5347]: group added to /etc/group: name=lab5user, GID=1001
+2026-10-16T06:12:26.885542+00:00 ubuntu-lab01 groupadd[5347]: group added to /etc/gshadow: name=lab5user
+2026-10-16T06:12:26.895872+00:00 ubuntu-lab01 groupadd[5347]: new group: name=lab5user, GID=1001
+2026-10-16T06:12:27.109666+00:00 ubuntu-lab01 useradd[5352]: new user: name=lab5user, UID=1001, GID=1001, home=/home/lab5user, shell=/bin/bash, from=/dev/pts/1
+2026-10-16T06:12:43.227457+00:00 ubuntu-lab01 passwd[5363]: pam_unix(passwd:chauthtok): password changed for lab5user
+2026-10-16T06:12:53.933795+00:00 ubuntu-lab01 chfn[5367]: changed user 'lab5user' information
+2026-10-16T06:12:55.655766+00:00 ubuntu-lab01 gpasswd[5374]: members of group users set by root to maleehanadeem13,lab5user
+2026-10-16T06:13:51.466750+00:00 ubuntu-lab01 unix_chkpwd[5421]: password check failed for user (lab5user)
+2026-10-16T06:13:51.471207+00:00 ubuntu-lab01 su: pam_unix(su-l:auth): authentication failure; logname=maleehanadeem13 uid=1000 euid=0 tty=/dev/pts/0 ruser=maleehanadeem13 rhost=  user=lab5user
+2026-10-16T06:13:53.577834+00:00 ubuntu-lab01 su[5419]: FAILED SU (to lab5user) maleehanadeem13 on pts/0
+2026-10-16T06:14:03.755134+00:00 ubuntu-lab01 su[5431]: (to lab5user) maleehanadeem13 on pts/0
+2026-10-16T06:14:03.760462+00:00 ubuntu-lab01 su[5431]: pam_unix(su-l:session): session opened for user lab5user(uid=1001) by maleehanadeem13(uid=1000)
+2026-10-16T06:14:46.782259+00:00 ubuntu-lab01 su[5431]: pam_unix(su-l:session): session closed for user lab5user
+2026-10-16T06:15:16.750218+00:00 ubuntu-lab01 sudo: maleehanadeem13 : TTY=/dev/pts/0 ; PWD=/home/maleehanadeem13/lab05-linux ; USER=root ; COMMAND=/usr/bin/grep lab5user /var/log/auth.log
+2026-10-16T06:15:16.795679+00:00 ubuntu-lab01 sudo: maleehanadeem13 : TTY=/dev/pts/0 ; PWD=/home/maleehanadeem13/lab05-linux ; USER=root ; COMMAND=/usr/bin/grep lab5user /var/log/auth.log
