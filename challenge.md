@@ -17,9 +17,9 @@ Answer: The users who can log in with /bin/bash are root and maleehanadeem13.
 Command: grep bash /etc/passwd
 
 ## Question 5
-Answer: 224 processes are running (ps aux printed 225 lines, minus 1 header line).
+Answer: 223 processes are running (ps aux printed 225 lines, minus 1 header line).
 Command: ps aux | wc -l
 
 ## Question 6
-Answer: lab5user was created at ____ and deleted at ____.
+Answer: 223 processes are running (ps aux printed 224 lines, minus 1 header line)
 Command: sudo grep -E "new user|delete user" /var/log/auth.log
